@@ -1,0 +1,43 @@
+﻿<Window x:Class="ERD_Visualizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ERD_Visualizer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1024" Width="1024">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Column="0" Background="LightBlue">
+            <ToggleButton x:Name="GridToggle" Click="GridToggle_Click">Grid enable</ToggleButton>
+            <ToggleButton x:Name="MultiselectedEnabledToggle" Click="MultiselectedEnabledToggle_Click">Multiselect</ToggleButton>
+            <ToggleButton x:Name="MoveLinesToggle" Click="MoveLinesToggle_Click">Move relation lines</ToggleButton>
+            <TextBlock x:Name="MouseXPos" Text="{Binding LastPosition.X}"></TextBlock>
+            <TextBlock x:Name="MouseYPos" Text="{Binding LastPosition.Y}" Margin="5,0,0,0"></TextBlock>
+            <!-- Liste der Entities -->
+            <ListBox x:Name="EntitiesListBox" SelectionChanged="EntitiesListBox_SelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Entity.Name}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <TextBlock>Moving: STRG+Mouse Left Button Down + Mousemove -> Panig</TextBlock>
+            <TextBlock>Zoom: STRG+Scroll</TextBlock>
+            <TextBlock>Multiselect: Enable Multiselect in UI + Left Mouse Button down + Mousemove</TextBlock>
+        </StackPanel>
+        <ScrollViewer 
+            Grid.Column="1" x:Name="DiagramCanvasScrollViewer" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
+            <Canvas x:Name="DiagramCanvas" Width="10000" Height="10000" Background="White" >
+                <Canvas.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Alle Entities anzeigen" Click="MenuItem_ShowAllEntities_Click"/>
+                    </ContextMenu>
+                </Canvas.ContextMenu>
+            </Canvas>
+        </ScrollViewer>
+    </Grid>
+</Window>
