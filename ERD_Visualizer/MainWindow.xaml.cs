@@ -970,7 +970,7 @@ namespace ERD_Visualizer
                     MenuItem itemSetAmountOfControlPoints = new MenuItem { Header = "Set amount of controls points" };
                     itemSetAmountOfControlPoints.Click += (s, e) =>
                     {
-                        var dialog = CustomInputDialog.Show("Amount of control points","Please enter the amout of control points");
+                        var dialog = CustomInputDialog.Show($"Amount of control points",$"Please enter the amout of control points (actual value: {relationship.AmountOfControlPoints})");
                         if(dialog.ShowDialog().Value)
                         {
                             if(int.TryParse(dialog.InputValue, out int inputInt))

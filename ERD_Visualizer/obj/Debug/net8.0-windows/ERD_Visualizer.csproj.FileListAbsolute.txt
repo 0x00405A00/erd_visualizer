@@ -20,3 +20,4 @@ C:\Users\Mika\source\repos\ERD_Visualizer\ERD_Visualizer\obj\Debug\net8.0-window
 C:\Users\Mika\source\repos\ERD_Visualizer\ERD_Visualizer\obj\Debug\net8.0-windows\ref\ERD_Visualizer.dll
 C:\Users\Mika\source\repos\ERD_Visualizer\ERD_Visualizer\obj\Debug\net8.0-windows\CustomInputDialog.g.cs
 C:\Users\Mika\source\repos\ERD_Visualizer\ERD_Visualizer\obj\Debug\net8.0-windows\CustomInputDialog.baml
+C:\Users\Mika\source\repos\ERD_Visualizer\ERD_Visualizer\obj\Debug\net8.0-windows\ERD_Visualizer.sourcelink.json

@@ -8,7 +8,7 @@
         Title="Eingabe erforderlich" Height="200" Width="400" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
     <Grid Margin="10">
         <StackPanel>
-            <TextBlock Text="Bitte gib einen Wert ein:" Margin="0,0,0,10" />
+            <TextBlock x:Name="msgLabel" Text="Bitte gib einen Wert ein:" Margin="0,0,0,10" />
             <TextBox Name="txtInput" Height="25" Margin="0,0,0,10" />
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <Button Content="OK" Width="80" Margin="5" Click="OkButton_Click" />

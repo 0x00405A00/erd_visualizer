@@ -13,6 +13,7 @@ namespace ERD_Visualizer
         {
             InitializeComponent();
             this.Title = title;
+            msgLabel.Text = message;
             txtInput.Focus();
         }
 

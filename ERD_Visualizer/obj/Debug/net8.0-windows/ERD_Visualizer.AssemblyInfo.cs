@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ERD_Visualizer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fdc5a45c5a8c18de9e942400f0f0af0d48d501d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1d77d1bdec253163fe1fbc8589d97633dd35daa")]
 [assembly: System.Reflection.AssemblyProductAttribute("ERD_Visualizer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ERD_Visualizer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
